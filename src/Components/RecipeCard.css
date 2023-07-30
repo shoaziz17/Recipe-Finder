@@ -1,0 +1,93 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    align-items: center;
+}
+
+.recipe-card {
+  width: 300px;
+  margin: 20px;
+  padding: 2px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.recipe-card-container {
+  width: 95%;
+  margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recipe-card img {
+  width: 100%;
+}
+
+.recipe-card-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recipe-card-btns button {
+  padding: 8px 0;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.recipe-card-btns button:nth-child(1) {
+  border: 2px solid green;
+  color: green;
+  font-weight: 600;
+}
+
+.recipe-card-btns button:nth-child(1):hover {
+  background-color: green;
+  color: white;
+}
+
+.recipe-card-btns button:nth-child(2) {
+  border: 2px solid red;
+  color: red;
+  font-weight: 600;
+}
+
+.recipe-card-btns button:nth-child(2):hover {
+  background-color: red;
+  color: white;
+}
+
+td{
+  background-color: #eee;
+}
+
+.bgImage{
+  width: 20%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+@media (max-width:450px){
+    .cards{
+        display: grid;
+        grid-template-columns: auto auto;   
+    }
+
+    .recipe-card{
+        width: 80%;
+    }
+
+    .recipe-card h3{
+      font-size: 12px;
+    }
+
+    .recipe-card-btns button{
+        padding: 5px;
+        font-size: 12px;
+    }
+}
